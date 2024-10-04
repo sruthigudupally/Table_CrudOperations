@@ -1,0 +1,45 @@
+.but1{
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:nth-child(odd){
+    background-color: rgba(128, 128, 128, 0.286);
+}
+th{
+    background-color: black;
+    color: white;
+}
+#buts{
+    background-color: orange;
+}
+#butss{
+    background-color: rgba(0, 128, 0, 0.496);
+
+}
+#add{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #CC80D7;
+}
+#field{
+    width: 200px;
+    height: 100px;
+    border: solid rgb(223, 18, 223);
+    margin:200px auto;
+}
+legend{
+    color:maroon;
+}
+#adduser{
+    background-color: yellow;
+    padding: 7px 10px;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+table{
+    margin:80px auto;
+    
+}
