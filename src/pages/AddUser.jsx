@@ -10,6 +10,7 @@ const AddUser = () => {
     function adduser(e){
         e.preventDefault();
         axios.post("http://localhost:4040/users",values).then((x)=>navigate("/"))
+        .catch((err) => console.error('Error fetching user data:', err));
     }
 
   return (

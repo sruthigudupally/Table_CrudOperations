@@ -23,18 +23,21 @@
 import React from 'react'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Get from './pages/GetUsers'
-import AddUser from './pages/AddUser'
-import UpdateUser from './pages/UpdateUser'
+import Get from './pages/GetUsers.jsx'
+import AddUser from './pages/AddUser.jsx'
+import UpdateUser from './pages/UpdateUser.jsx'
+import Error from './pages/Errorpage.jsx'
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Get/>}/>
-        
+        <Route path="*" element={<Error/>}/>
         <Route path="/add" element={<AddUser/>}/>
         <Route path="/edit/:id" element={<UpdateUser/>}/>
+      
+
       </Routes>
       </BrowserRouter>
     </div>

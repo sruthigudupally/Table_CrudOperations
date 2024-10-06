@@ -12,14 +12,18 @@ const UpdateUser = () => {
    let {id}=useParams();
    useEffect(()=>{
      axios.get("http://localhost:4040/users/"+id).then(res=>setvalues(res.data))
+     .catch((err) => console.error('Error fetching user data:', err));
    },[id])
    function update(){
     axios.put("http://localhost:4040/users/"+id,values).then(()=>{
-        navigate("/")
-        .catch(err => console.error(err)); 
+        return(  navigate("/"))})
+        .catch((err) => console.error('Error fetching user data:', err));
 
-    })
-   }
+      
+        
+
+    }
+   
   return (
     <div>
       <h1>ADD NEW USER</h1>
